@@ -1,32 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>liebeily.fun</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            font-size: 3rem;
-            border-right: 3px solid #ff4757;
-            white-space: nowrap;
-            animation: blink 0.75s step-end infinite;
-        }
-        @keyframes blink {
-            from, to { border-color: transparent }
-            50% { border-color: #ff4757; }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'self'">
+  <meta name="referrer" content="no-referrer">
+  <title>АИС «Комнатки» — работающий макет</title>
+  <meta name="description" content="Работающий макет (прототип) АИС управления гостиничным комплексом «Комнатки» с механизмами защиты информации.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314213d'/%3E%3Cpath d='M9 23V12l7-4 7 4v11h-5v-6h-4v6z' fill='%23d4a94a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Привет, liebeily.fun работает! 🚀</h1>
+  <div id="app"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+  <noscript>Для работы макета необходимо включить JavaScript.</noscript>
+  <script src="app.js"></script>
 </body>
 </html>
